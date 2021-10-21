@@ -22,12 +22,14 @@
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
+/*
   $contact->smtp = array(
-    'host' => 'smtp.gmail.com',
-    'username' => 'makanyuxs@gmail.com',
-    'password' => 'makanyuxs123',
+    'host' => '#',
+    'username' => '#',
+    'password' => '#',
     'port' => '587'
   );
+  */
  
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
